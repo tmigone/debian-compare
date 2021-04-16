@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  pi4:
+    image: balenalib/raspberrypi4-64-debian:buster
+    command: balena-idle
+
+  pi1:
+    image: balenalib/raspberry-pi-debian:buster
+    command: balena-idle
+    
+  rpi:
+    image: balenalib/rpi-raspbian:buster
+    command: "sleep infinity"
+      
+  fix:
+    image: balenalib/rpi-raspbian:buster-20210202
+    command: "sleep infinity"
+        
+  fox:
+    image: balenalib/raspberrypi4-64-debian:buster-20210201
+    command: balena-idle
